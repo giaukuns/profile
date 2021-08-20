@@ -1064,7 +1064,7 @@ a {
 }
 
 .w3-circle {
-    border-radius: 50%
+    border-radius: 15%
 }
 
 .w3-round-small {
@@ -1645,14 +1645,22 @@ a {
 .w3-white,
 .w3-hover-white:hover {
     /* color: #000 !important; */
-    /* background-color: #fff !important */
+    /* background-color: #b3a5a5 !important; */
     color: rgb(208 179 179) !important;
+}
+
+.w3-over,
+.w3-hover-over:hover {
+    /* color: #000 !important; */
+    background-color: #353333 !important;
+    color: rgb(189, 151, 151) !important;
 }
 
 .w3-black,
 .w3-hover-black:hover {
     color: rgb(10, 10, 10) !important;
-    /* background-color: #000 !important */}
+    /* background-color: #000 !important */
+}
 
 .w3-grey,
 .w3-hover-grey:hover,
