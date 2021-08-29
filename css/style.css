@@ -1688,7 +1688,7 @@ a {
 .w3-dark-gray,
 .w3-hover-dark-gray:hover {
     /* color: rgb(22, 14, 14) !important;   */
-    background-color: #429489 !important
+    background-color: #8da5a2 !important
         /*
     Màu thanh mana
     */
@@ -2126,3 +2126,21 @@ video {
     --header-height: 144px;
     --header-padding: 93px;
 } */
+
+.btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: rgb(65, 55, 55);
+    color: var(--txt-white);
+    transition: all 0.3s ease 0s;
+    border-top: 2px solid #60665f;
+}
+
+.btn:hover {
+    background-color: rgb(207, 204, 201);
+    color: rgb(14, 13, 13);
+}
