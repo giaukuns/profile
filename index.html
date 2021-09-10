@@ -20,23 +20,37 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
       <i class="fa fa-remove"></i>
     </a>
-    <img src="image/avtar.jpg" style="width:45%;" class="w3-round"><br><br>
+    <img  id="myImg" src="image/avtar.jpg" style="width:45%;" class="w3-round img-zoomable" alt="Võ Ngọc Giàu" title="Click to zoom image."><br><br>
     <h4><b>Võ Ngọc Giàu</b></h4>
     <p class="w3-text-grey">Giàu Kùn</p>
   </div>
   <div class="w3-bar-block">
     <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
     <a href="+84375626182" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Liên Hệ: 0375626182</a> 
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-address-card fa-fw w3-margin-right"></i>Email:giauvo02051999@gmail.com</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-address-card fa-fw w3-margin-right"></i>giauvo02051999@gmail.com</a>
   </div>
-  <div class="w3-panel w3-large">
+  <div class="social-icons">
+    <a target="blank" href="https://github.com/giaukuns">
+      <i class="fa fa-github"></i>
+    </a>
+    <a target="blank" href="https://www.facebook.com/giau.vo.56232/">
+      <i class="fa fa-facebook-f"></i>
+    </a>
+    <a target="blank" href="https://www.instagram.com/giaukun/">
+      <i class="fa fa-instagram"></i>
+    </a>
+    <a target="blank" href="https://giaukuns.github.io/profile">
+      <i class="fa fa-camera"></i>
+    </a>
+  </div>
+  <!-- <div class="w3-panel w3-large">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
     <i class="fa fa-snapchat w3-hover-opacity"></i>
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
+  </div> -->
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -58,7 +72,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <button class="w3-button w3-white">ALL</button>
       <button class="w3-button w3-white w3-h"></a><i class="fa fa-facebook-official w3-margin-right"></i><a href="https://www.facebook.com/giau.vo.56232/">Facebook</a></button>
       <button class="w3-button w3-white w3-h"></a><i class="fa fa-instagram w3-margin-right" ></i><a href="https://www.instagram.com/giaukun/">Instagram</a></button>
-      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i><a href="https://giaukuns.github.io/vongocgiau/">Web</a></button>
+      <button class="w3-button w3-white w3-h"><i class="fa fa-map-pin w3-margin-right"></i><a href="https://giaukuns.github.io/vongocgiau/">Web</a></button>
     </div>
     </div>
   </header>
@@ -228,11 +242,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   </footer>
   
   <div class="w3-black w3-center w3-padding-24">VO NGOC GIAU</div>
-
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
 <!-- End page content -->
 </div>
-
+<script src="/js/main.js"></script>
 <script>
+  
 // Script to open and close sidebar
 function w3_open() {
     document.getElementById("mySidebar").style.display = "block";
